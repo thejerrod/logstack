@@ -22,3 +22,26 @@ Monitoring the health and performance of Docker containers and hosts
 Collecting and analyzing logs and metrics from microservices architectures
 Troubleshooting issues in distributed systems
 Analyzing user behavior and application usage patterns
+
+The directory tree is as follows:
+
+logstack/
+├── cadvisor
+│   ├── config
+│   └── ...
+├── grafana
+│   └── provisioning
+│       ├── dashboards
+│       ├── datasources
+│       └── ...
+├── loki
+│   ├── config
+│   └── data
+├── node-exporter
+├── prometheus
+│   ├── prometheus.yml
+│   └── ...
+├── promtail
+│   ├── config
+│   └── ...
+└── docker-compose.yml
