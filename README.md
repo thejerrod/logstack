@@ -54,3 +54,16 @@ The compose file exposes (internal to stack) the following ports:
 
 And one host published port (external to stack) :
 - Grafana: port `3000`
+
+To deploy, create the parent directory:
+`mkdir logstack`
+
+Deploy using `docker compose` from the `logstack` directory:
+
+`cd logstack`
+
+`docker compose up -d`
+
+Update by recreating and rebuilding clean:
+
+`docker compose up -d --force-recreate --build`
