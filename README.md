@@ -6,9 +6,8 @@ This `docker-compose.yml` file defines a Docker stack for a logging and monitori
 - Promtail: A log collector and processor that integrates with Loki. It can collect logs from various sources and enrich them with labels, which can be used for filtering and querying in Loki.
 - Prometheus: A time-series database and monitoring system. It can scrape metrics from various sources, store them in its database, and display them in a web interface.
 - cAdvisor: A container monitoring tool. It can collect metrics about the resource usage and performance of Docker containers and their hosts.
-- Node Exporter: A Prometheus exporter that collects metrics about the system and exports them in the Prometheus format. It can collect various system-level metrics such as CPU, memory, disk usage, and network traffic.
-
-This stack also includes Grafana, a web-based dashboard and visualization tool, which can be used to visualize and analyze metrics from Prometheus, Loki, and other data sources.
+- node-exporter: A Prometheus exporter that collects metrics about the system and exports them in the Prometheus format. It can collect various system-level metrics such as CPU, memory, disk usage, and network traffic.
+- Grafana: A web-based dashboard and visualization tool which can be used to visualize and analyze metrics from Prometheus, Loki, and other data sources.
 
 With this setup, you can collect logs and metrics from various sources, store them in Loki and Prometheus, and visualize and analyze them in Grafana. This can be useful for monitoring the health and performance of your system, troubleshooting issues, and gaining insights into your applications.
 
