@@ -44,11 +44,13 @@ logstack/
 └── docker-compose.yml
 ```
 
-The compose file exposes the following ports:
+The compose file exposes (internal to container) the following ports:
 
 - Loki: port `3100`
 - Promtail: port `9080`
 - Prometheus: port `9090`
 - cAdvisor: port `8080`
 - Node Exporter: port `9100`
+
+And one host published port (external to container) :
 - Grafana: port `3000`
